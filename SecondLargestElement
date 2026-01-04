@@ -1,0 +1,24 @@
+package com.dsa.array;
+
+public class SecondLargestElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int []arr= {89,8,7,9,8,5,98,98,99};
+     int largest=Integer.MIN_VALUE;
+     int SecondLargest=Integer.MIN_VALUE;
+     
+     for(int n:arr) {
+    	 if(n>largest) {
+    		 SecondLargest=largest;
+    		 largest=n;
+    	 }
+    	 else if(n>SecondLargest && n!=largest) {
+    		 SecondLargest=n;
+    	 }
+     }
+     System.out.println("SecondLargest="+SecondLargest);
+  
+	}
+
+}

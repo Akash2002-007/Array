@@ -1,0 +1,22 @@
+package com.nit.arraypractice;
+
+public class TargetSumTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int []arr= {1,2,3,7,8,9,5,58,78,9,89,7,8};
+      int  Target =9;         //Find TargetSum 
+       for(int i=0;i<arr.length;i++) {
+    	   for(int j=i+1;j<arr.length;j++) {
+    		   //if(arr[i]==arr[j]) {  //Find Duplicate
+    			//   System.out.println(arr[i]+" ");
+    		//   }
+    		   
+    		   if(arr[i]+arr[j]==Target) {
+    			   System.out.println("Index Find =" +i+ "Index Find=" +j+ "Target Sum=" + (arr[i]+arr[j]));
+    		   }
+    	   }
+       }
+	}
+
+}

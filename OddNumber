@@ -1,0 +1,20 @@
+package com.dsa.array;
+
+public class OddNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int []arr= {4,5,7,8,9,6,89,68,99,978};
+     int odd=0;
+     for(int n:arr) {
+    	 if(n%2!=0) {
+    		 System.out.println(" "+n); //print the element
+    		odd++;
+    		
+    	System.out.println("=======================================================");
+    	 }
+     }
+     System.out.println(" "+odd); //print howmany come
+	}
+
+}

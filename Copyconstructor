@@ -1,0 +1,14 @@
+package com.dsa.array;
+
+public class Copyconstructor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    int arr[]= {1,2,3,4,7,8,98,7,89,};
+    int copy[]=arr.clone();
+    for(int i:copy) {
+    	System.out.println(" "+i);
+    }
+	}
+
+}

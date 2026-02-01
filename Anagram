@@ -1,0 +1,26 @@
+package com.dsa.array;
+
+import java.util.Arrays;
+
+//Online Java Compiler
+//Use this editor to write, compile and run your Java code online
+
+class Main {
+ public static void main(String[] args) {
+     int []a={1,2,3,4,5,6,7,8,9};
+     int []b={9,8,7,6,5,4,3,2,1};
+     
+     if(a.length!=b.length){
+         System.out.println("It is not anagram");
+         return;
+     }
+      Arrays.sort(a);
+      Arrays.sort(b);
+      if(Arrays.equals(a,b)){
+     System.out.println("It is anagram");
+      }
+ else{
+     System.out.println("It is not anagram");
+ }
+ }
+}

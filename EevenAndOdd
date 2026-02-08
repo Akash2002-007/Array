@@ -1,0 +1,21 @@
+package com.nit.skyio;
+
+public class EevenAndOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   int []arr= {20,7,9,8,50,89,78,45,99};
+   int even=0,odd=0;
+   for(int n:arr) {
+	   if(n%2==0 ) {
+		   even++;
+	   }else {
+		   
+	   
+		   odd++;
+	   }
+   }
+   System.out.println("Even="+even+",Odd="+odd);
+	}
+
+}

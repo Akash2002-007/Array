@@ -1,0 +1,46 @@
+package com.nit.string;
+
+public class TwoarrayoinEvenODD {
+
+	public static void main(String[] args) {
+
+		        int arr1[] = {2, 4, 5, 7, 8};
+		        int arr2[] = {7, 8, 9, 5, 4};
+
+		        int arr3[] = new int[arr1.length + arr2.length];
+
+		        // merge first array
+		        for(int i = 0; i < arr1.length; i++) {
+		            arr3[i] = arr1[i];
+		        }
+
+		        // merge second array
+		        for(int i = 0; i < arr2.length; i++) {
+		            arr3[arr1.length + i] = arr2[i];
+		        }
+
+		        System.out.println("Merged Array:");
+
+		        for(int i = 0; i < arr3.length; i++) {
+		            System.out.print(arr3[i] + " ");
+		        }
+
+		        System.out.println("\nEven Numbers:");
+
+		        for(int i = 0; i < arr3.length; i++) {
+		            if(arr3[i] % 2 == 0) {
+		                System.out.print(arr3[i] + " ");
+		            }
+		        }
+
+		        System.out.println("\nOdd Numbers:");
+
+		        for(int i = 0; i < arr3.length; i++) {
+		            if(arr3[i] % 2 != 0) {
+		                System.out.print(arr3[i] + " ");
+		            }
+		        }
+		
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.nit.arraytopic;
+
+import java.util.Arrays;
+
+public class CombineArrayEvenandOdd {
+
+		    public static void main(String[] args) {
+
+		        int arr[] = {2, 4, 5, 7, 8};
+		        int arr1[] = {7, 8, 9, 5, 4};
+
+		        int arr3[] = new int[arr.length + arr1.length];
+
+		        // Merge arrays
+		        for (int i = 0; i < arr.length; i++) {
+		            arr3[i] = arr[i];
+		        }
+
+		        for (int i = 0; i < arr1.length; i++) {
+		            arr3[arr.length + i] = arr1[i];
+		        }
+
+		        // Sort in ascending order
+		        Arrays.sort(arr3);
+
+		        System.out.println("Sorted Array (Ascending):");
+		        for (int num : arr3) {
+		            System.out.print(num + " ");
+		        }
+
+		        System.out.println("\n\nEven Elements:");
+		        for (int num : arr3) {
+		            if (num % 2 == 0) {
+		                System.out.print(num + " ");
+		            }
+		        }
+
+		        System.out.println("\n\nOdd Elements:");
+		        for (int num : arr3) {
+		            if (num % 2 != 0) {
+		                System.out.print(num + " ");
+		            }
+		        }
+		    }
+		}

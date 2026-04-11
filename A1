@@ -1,0 +1,31 @@
+package com.nit.multithreadandexception;
+
+public interface   A1 {
+	 
+   default void show() {
+	   System.out.println("It is printe A");
+   }
+   interface B{
+	   default void display() {
+		   System.out.println("it is print B");
+	   }
+   }
+   class C implements A1,B{
+	  public void show() {
+		  System.out.println("Show A");
+	  }
+	    public void display() {
+	    	System.out.println("show B");
+	    }
+   }
+   public static void main(String[] args) {
+	   C  t=new C();
+	     t.show();
+	     t.display();
+	     
+	     A1 a=new C();
+	       a.show();
+	       
+	     
+   }
+}

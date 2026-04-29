@@ -1,0 +1,32 @@
+package com.nit.arraypractice;
+
+import java.util.Arrays;
+
+public class Anagram {
+
+    public static void main(String[] args) {
+        String s1 = "abb";
+        String s2 = "bba";
+
+        // Step 1: Check length
+        if (s1.length() != s2.length()) {
+            System.out.println("It is not anagram");
+            return;
+        }
+
+        // Step 2: Convert to char array
+        char[] arr1 = s1.toCharArray();
+        char[] arr2 = s2.toCharArray();
+
+        // Step 3: Sort both arrays
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        // Step 4: Compare
+        if (Arrays.equals(arr1, arr2)) {
+            System.out.println("It is anagram");
+        } else {
+            System.out.println("It is not anagram");
+        }
+    }
+}

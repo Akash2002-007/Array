@@ -1,0 +1,47 @@
+package com.nit.string;
+
+public class ASecendingArrayCombineArray {
+
+	public class CombineSortArrayEvenAndOdd89{
+
+	    public static void main(String[] args) {
+
+	        int arr1[] = {5, 2, 8};
+	        int arr2[] = {7, 1, 4};
+
+	        // new array for combined elements
+	        int arr3[] = new int[arr1.length + arr2.length];
+
+	        // copy first array
+	        for(int i = 0; i < arr1.length; i++) {
+	            arr3[i] = arr1[i];
+	        }
+
+	        // copy second array
+	        for(int i = 0; i < arr2.length; i++) {
+	            arr3[arr1.length + i] = arr2[i];
+	        }
+
+	        // sorting in ascending order
+	        for(int i = 0; i < arr3.length; i++) {
+	            for(int j = i + 1; j < arr3.length; j++) {
+
+	                if(arr3[i] > arr3[j]) {
+	                    int temp = arr3[i];
+	                    arr3[i] = arr3[j];
+	                    arr3[j] = temp;
+	                }
+
+	            }
+	        }
+
+	        // print sorted array
+	        System.out.println("Combined Sorted Array:");
+
+	        for(int num : arr3) {
+	            System.out.print(num + " ");
+	        }
+	    }
+	}
+
+}

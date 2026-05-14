@@ -1,0 +1,15 @@
+package com.nit.arraypractice;
+
+public class Unielement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      int []arr= {1,1,3,4,4};
+      int xor=0;
+      for(int num:arr) {
+    	  xor^=num;
+      }
+      System.out.println(xor);
+	}
+
+}

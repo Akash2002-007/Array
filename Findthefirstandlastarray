@@ -1,0 +1,13 @@
+package com.nit.array;
+
+public class Findthefirstandlastarray{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int[]arr= {10,20,30,40,50};
+        System.out.println(" "+arr.length);
+        System.out.println(""+arr[0]);
+        System.out.println(" "+arr[arr.length-1]);
+	}
+
+}

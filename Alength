@@ -1,0 +1,15 @@
+package com.nit.array;
+
+public class Alength {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      int arr[]= {10,20,30,50,80,90,98,99};
+      int count=0;
+      System.out.println(" "+arr.length);
+      System.out.println(" "+arr[0]+" "+arr[arr.length-1]);
+      
+      
+	}
+
+}

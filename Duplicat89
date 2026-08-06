@@ -1,0 +1,22 @@
+package com.nit.array;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Duplicat89 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		        int[]arr={1,2,3,2,4,1,5};
+		        Set<Integer>set=new HashSet<>();
+		        for(int n:arr){
+		        	
+		            if(!set.add(n)){
+		                System.out.println(n);
+		            }
+		        }
+		    
+	}
+
+}

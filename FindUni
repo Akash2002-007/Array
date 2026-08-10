@@ -1,0 +1,26 @@
+package com.nit;
+
+public class FindUni {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int []arr= {2,3,42,5,7,9,7,9};
+     int count;
+     
+      for(int i=0;i<arr.length;i++) {
+    	  count=0;
+       for(int j=i+1;j<arr.length;j++) {
+    		  
+    	  
+            if(arr[i]==arr[j]) {
+	              count++;
+               }
+      }
+       if(count==1) {
+    		 System.out.println(arr[i]+" And "+count);
+    	 }
+ }
+      
+	}
+
+}

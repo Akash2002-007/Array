@@ -1,0 +1,28 @@
+package src.condition;
+
+import java.util.Scanner;
+
+public class Mark {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner sc =new Scanner(System.in);
+	       System.out.println("Enter the number");
+         int a=sc.nextInt();
+         int b=sc.nextInt();
+         int c=sc.nextInt();
+         int d=sc.nextInt();
+         int e=sc.nextInt();
+         
+         int total=a+b+c+d+e;
+         int lowest=Math.min(a,Math.min(b,Math.min(c,Math.min(d, e))));
+         int best=total-lowest;
+         
+         double per=best/400.0*100;
+         System.out.println(" "+lowest);
+         System.out.println(" "+best);
+         System.out.println(" "+per);
+         
+	}
+
+}

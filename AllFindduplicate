@@ -1,0 +1,24 @@
+package src.com.nit;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class AllFindduplicate {
+     public static void main(String []args) {
+    	 ArrayList<Integer> list=new ArrayList<>(Arrays.asList(2,3,7,8,9,5,8));
+    	 
+    	 HashSet<Integer> set=new HashSet<>();
+    	 HashSet<Integer>io=new HashSet<>();
+    	 
+    	 for(Integer num:list) {
+    		   if(!set.add(num)) {
+    			   io.add(num);
+    		   }
+    		  
+    	 }
+    	 System.out.println(" "+io);
+    	
+    	 
+     }
+}

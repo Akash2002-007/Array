@@ -1,0 +1,64 @@
+SQL> select *from emp order by sal desc fetch first 3 rows only;
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7369 SMITH      MANAGER         7902 17-DEC-80      89000        900
+        20
+
+      7788 SCOTT      ANALYST         7566 09-DEC-82      89000        900
+        20
+
+      7566 JONES      MANAGER         7839 02-APR-81      89000        900
+        20
+
+
+SQL> select *from emp order by sal desc fetch first 3 rows only;
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7369 SMITH      MANAGER         7902 17-DEC-80      89000        900
+        20
+
+      7788 SCOTT      ANALYST         7566 09-DEC-82      89000        900
+        20
+
+      7566 JONES      MANAGER         7839 02-APR-81      89000        900
+        20
+
+
+SQL> select sal,count(*) from emp group by sal having count(*)>1;
+
+       SAL   COUNT(*)
+---------- ----------
+     89000          5
+
+SQL> select*from emp where sal>(select avg(sal) from emp);
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7369 SMITH      MANAGER         7902 17-DEC-80      89000        900
+        20
+
+      7566 JONES      MANAGER         7839 02-APR-81      89000        900
+        20
+
+      7788 SCOTT      ANALYST         7566 09-DEC-82      89000        900
+        20
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7876 ADAMS      CLERK           7788 12-JAN-83      89000        900
+        20
+
+      7902 FORD       ANALYST         7566 03-DEC-81      89000        900
+        20
+

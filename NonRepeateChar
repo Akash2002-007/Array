@@ -1,0 +1,22 @@
+package src.com.nit;
+
+public class NonRepeateChar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      String str="Java";
+      int count=0;
+      
+      for(int i=0;i<str.length();i++) {
+    	    char ch=str.charAt(i);
+    	  if(str.indexOf(ch)==str.lastIndexOf(ch) ) {
+    		  count++;
+    		  
+    		  System.out.println(str.charAt(i));
+    	   }
+      }
+    	  
+  System.out.println(" "+count);
+	}
+
+}
